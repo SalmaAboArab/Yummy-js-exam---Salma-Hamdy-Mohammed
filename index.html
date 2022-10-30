@@ -10,6 +10,9 @@
 
     <body class="bg-black">
 
+<section id="floading" class="loading d-none justify-content-center align-items-center">
+    <i class="fas fa-spinner fa-3x fa-spin"></i>
+</section>
 <section id="loading" class="loading d-none justify-content-center align-items-center">
     <i class="fas fa-spinner fa-3x fa-spin"></i>
 </section>
@@ -119,65 +122,70 @@
             </section>
 
 
-            <div class="contact d-none flex-column container align-items-center mt-5" id="contact">
-                <h2 class="text-light mb-5">ContacUs...</h2>
-                <div class="row justify-content-center align-items-center">
-                    <div class="cont1 col-md-6 d-flex flex-column align-items-end">
-                        <div class="">
-                            <input class="" onkeyup="validation()" id="name" placeholder="Enter Your Name">
-                            <div class="alert mt-1 alert-danger d-none" id="namealert" role="alert">
-                                Special Characters and Numbers not allowed
+            <div class="row text-center" id="rowData">
+                <section id="contact" class="container w-75 mx-auto mb-5 d-none">
+                <div class="p-2 position-relative cont">
+                    <h2 class="text-light mb-5">ContacUs...</h2>
+                    <div class="row ps-5">
+                        <div class="col-md-6 ">
+                            <div class="form-group p1">
+                                <input class="form-control t1" id="name" placeholder="Enter Your Name">
+                                <div class="d1 d alert mt-1 alert-danger" id="namealert" role="alert">
+                                    Special Characters and Numbers not allowed
+                                </div>
                             </div>
                         </div>
-                        <div class="">
-                            <input onkeyup="validation()" class="" id="phone" placeholder="Enter phone">
-                            <div class="alert mt-1 alert-danger  d-none" id="phonealert" role="alert">
-                                Enter valid Phone Number
+                        <div class="col-md-6">
+                            <div class="form-group p2">
+                                <input class="form-control t2" id="email" placeholder="Enter Email">
+                                <div class="d2 d alert mt-1 alert-danger" id="emailalert" role="alert">
+                                    Enter valid email. *Ex: xxx@yyy.zzz
+                                </div>
                             </div>
                         </div>
-                        <div class="">
-                            <input onkeyup="validation()" class="" type="password" id="password" placeholder="Enter Password">
-                            <div class="alert mt-1 alert-danger  d-none" id="passwordalert" role="alert">
-                                Enter valid password *Minimum eight characters, at least one letter and one number:*
+                        <div class="col-md-6">
+                            <div class="form-group p1">
+                                <input class="form-control t3" id="phone" placeholder="Enter phone">
+                                <div class="d3 d alert mt-1 alert-danger" id="phonealert" role="alert">
+                                    Enter valid Phone Number
+                                </div>
                             </div>
                         </div>
-
-                        
-    
-                        
-    
-    
+                        <div class="col-md-6">
+                            <div class="form-group p2">
+                                <input class="form-control t4" id="age" placeholder="Enter Age">
+                                <div class="d4 d alert mt-1 alert-danger" id="agealert" role="alert">
+                                    Enter valid Age
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group p1">
+                                <input class="form-control t5" type="password" id="password" placeholder="Enter Password">
+                                <div class="d5 d alert mt-1 alert-danger" id="passwordalert" role="alert">
+                                    Enter valid password *Minimum eight characters, at least one letter and one number:*
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group p2">
+                                <input class="form-control t6" type="password" id="rePassword" placeholder="Enter RePassword">
+                                <div class="d6 d alert mt-1 alert-danger" id="repasswordalert" role="alert">
+                                    Enter valid Repassword
+                                </div>
+                            </div>
+                        </div>
+        
+        
                     </div>
-    
-                    <div class="cont2 col-md-6 d-flex flex-column align-items-start">
-                        <div class="">
-                            <input onkeyup="validation()" class="" id="email" placeholder="Enter Email">
-                            <div class="alert mt-1 alert-danger d-none" id="emailalert" role="alert">
-                                Enter valid email. *Ex: xxx@yyy.zzz
-                            </div>
-                        </div>
-
-                        <div class="">
-                            <input onkeyup="validation()" class="" id="age" placeholder="Enter Age">
-                            <div class="alert mt-1 alert-danger  d-none" id="agealert" role="alert">
-                                Enter valid Age
-                            </div>
-                        </div>
-    
-    
-                        <div class="">
-                            <input onkeyup="validation()" class="" type="password" id="rePassword" placeholder="Enter RePassword">
-                            <div class="alert mt-1 alert-danger  d-none" id="repasswordalert" role="alert">
-                                Enter valid Repassword
-                            </div>
-                        </div>
-    
-                    </div>
-    
-    
+        
+                    <button type="submit" disabled="true" id="submitBtn" class="btn btn-outline-danger ">Submit</button>
                 </div>
-                <button type="submit" disabled="" id="submitBtn" class="btn btn-outline-danger">Submit</button>
-            </div>
+        
+            </section>
+        </div>
+
+            
 
         </div>
         
